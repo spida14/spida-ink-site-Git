@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spida Ink</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: black;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header {
+            height: 100vh;
+            background: url('your-hero-image.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        section {
+            padding: 60px 20px;
+        }
+        h2 {
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+        .about, .portfolio, .booking {
+            background: #222;
+            margin: 20px auto;
+            padding: 40px;
+            max-width: 1000px;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Spida Ink</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#booking">Booking</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Welcome to Spida Ink</h1>
+        <p>Your custom tattoo journey starts here</p>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief bio about you, your style, and what inspires your work.</p>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="your-image1.jpg" alt="Tattoo 1" style="width:100%; border-radius:10px;">
+            </div>
+            <div class="portfolio-item">
+                <img src="your-image2.jpg" alt="Tattoo 2" style="width:100%; border-radius:10px;">
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+    <section id="booking">
+        <h2>Book a Session</h2>
+        <p>Contact form or booking info goes here—whether it’s a form or a link to your booking platform.</p>
+    </section>
+</body>
+</html>
